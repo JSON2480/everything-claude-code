@@ -1,4 +1,4 @@
-# TKG NIHB Platform — Project State
+# TKG NIHB Platform (Project State)
 
 > Living document. Update after every significant deployment task, schema change, or feature ship.
 > Owner: Jason Dallaire. Maintainer when working in Claude Code: the active agent.
@@ -9,7 +9,7 @@
 **Live URL**: Not yet deployed.
 **Last updated**: 2026 05 13
 
-## Identifiers (no secrets — names only)
+## Identifiers (no secrets, names only)
 
 | Resource | Identifier | Notes |
 |---|---|---|
@@ -31,7 +31,7 @@
 
 ### Complete
 
-(none yet — this is fresh setup)
+(none yet. This is fresh setup.)
 
 ### In progress
 

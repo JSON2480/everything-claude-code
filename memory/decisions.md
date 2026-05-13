@@ -1,9 +1,9 @@
-# TKG NIHB Platform — Decisions Log
+# TKG NIHB Platform (Decisions Log)
 
 > One entry per architectural or product decision. Append, never overwrite.
 > Format per entry: Date, Decision, Why, Rejected alternatives.
 
-## 2026 05 13 — Stack: Supabase + React + Vercel
+## 2026 05 13. Stack: Supabase + React + Vercel
 
 **Decision**: Build the platform on Supabase (Postgres, Auth, RLS, Storage) with a React front end, hosted on Vercel.
 
@@ -19,7 +19,7 @@
 - **Retool**: Per user seat pricing scales badly. Less control over where data lives. Audit log primitives weaker.
 - **Airtable**: Not PHIPA defensible for patient health information. No real RLS. Vendor controlled storage region.
 
-## 2026 05 13 — Region: Canada Central
+## 2026 05 13. Region: Canada Central
 
 **Decision**: All Supabase resources provisioned in Canada Central (ca central 1).
 
@@ -32,7 +32,7 @@
 
 - US East: cheaper egress to some services but creates a cross border data flow that we would have to document and defend.
 
-## 2026 05 13 — Budget cap: under $50 / month year one
+## 2026 05 13. Budget cap: under $50 / month year one
 
 **Decision**: Free tier for both Supabase and Vercel during year one. Upgrade triggered by an actual limit (database size, function invocations, build minutes), not by anticipation.
 
@@ -45,7 +45,7 @@
 
 - Pre buying Supabase Pro: would burn $25 / month before we hit any limit.
 
-## 2026 05 13 — Roles fixed to four
+## 2026 05 13. Roles fixed to four
 
 **Decision**: admin, coordinator, finance, viewer. Stored on a user_roles table, enforced in RLS.
 
@@ -59,7 +59,7 @@
 - Granular per resource permissions: overkill at this user count.
 - Single role per user table column: harder to extend if we ever need multi role.
 
-## 2026 05 13 — Soft delete only, immutable audit logs
+## 2026 05 13. Soft delete only, immutable audit logs
 
 **Decision**:
 

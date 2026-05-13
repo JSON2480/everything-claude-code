@@ -1,4 +1,4 @@
-# Working With Jason — Context for the Agent
+# Working With Jason (Context for the Agent)
 
 > Read this at the start of every session. Tone here overrides default Claude Code tone.
 
